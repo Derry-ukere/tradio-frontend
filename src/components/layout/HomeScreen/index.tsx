@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 
 // import {useDispatch, useSelector } from 'react-redux';
@@ -6,7 +6,7 @@ import React from 'react';
 // import DemoActions from '../../actions/demo';
 // import {RootState} from '../../store';
 import NavBar from '../../organism/nav/Nav';
-
+import Loader from '../../atom/Loader';
 
 const HomeSCeen = () => {
   // const dispatch = useDispatch();
@@ -15,12 +15,14 @@ const HomeSCeen = () => {
   //   dispatch(DemoActions.main());
   // },[dispatch]); 
   // const name = 'loading...';
-  return (
-    <div>
-   
-      <NavBar />
-     
+  const [loading, setLoading] = useState(true);
 
+  setTimeout(() =>{
+    setLoading(false);
+  },2000); 
+  return (
+    <div>  
+      { loading ?  <Loader /> :<NavBar />} 
     </div>
   );
 };
