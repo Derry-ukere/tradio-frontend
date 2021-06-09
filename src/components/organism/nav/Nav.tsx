@@ -27,7 +27,7 @@ const Nav = () => {
       <div className="container-fluid position-relative">
         <MemoizedBrand />
         <MemoizedTogglerButtun ClickHandler = {openDrawer}/>
-        <MemoizedInternalMobileNav clickHandler = {closeDrawer} clickHandlerTwo = {backdroHandler}/>
+        <MemoizedInternalMobileNav clickHandler = {closeDrawer} clickHandlerTwo = {backdroHandler} state = {sideDrawerOpen}/>
         <MemoizedAuthen />
       </div>
     </header>
