@@ -1,21 +1,22 @@
 import React from 'react';
-import CloseToggleButton from '../atom/CloseToggleButton';
-import MobileNav from '../atom/MobileNav';
+import {MemoizedCloseToggleButton} from '../atom/CloseToggleButton';
+import {MemoizedMobileNav} from '../atom/MobileNav';
+import {MemoizedBackdrop} from '../molecule/Backdrop';
+
 
 interface ToggleProps {
 clickHandler : (event: React.MouseEvent<HTMLButtonElement>) => void;
-
+clickHandlerTwo: () => void;
 }
 
 const InternalMobileNav = (props:ToggleProps) => {
   return (
     <div className="navbar-inner">
-      {/*  Nav close button inside off-canvas/ mobile menu */}
-      <CloseToggleButton ClickHandler = {props.clickHandler} />
-      {/* end of Nav Toggoler */}
-      <MobileNav />
+      <MemoizedBackdrop clickHandlerTwo = {props.clickHandlerTwo}/>
+      <MemoizedCloseToggleButton ClickHandler = {props.clickHandler} />
+      <MemoizedMobileNav />
     </div>
   );
 };
 
-export default InternalMobileNav;
+export const  MemoizedInternalMobileNav = React.memo(InternalMobileNav);

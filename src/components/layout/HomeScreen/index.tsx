@@ -5,8 +5,9 @@ import React,{useState} from 'react';
 // import Demo from '../../components/demo/Index';
 // import DemoActions from '../../actions/demo';
 // import {RootState} from '../../store';
-import NavBar from '../../organism/nav/Nav';
-import Loader from '../../atom/Loader';
+import {MemoisedNavBar} from '../../organism/nav/Nav';
+import {MemoizedLoader} from '../../atom/Loader';
+
 
 const HomeSCeen = () => {
   // const dispatch = useDispatch();
@@ -22,7 +23,8 @@ const HomeSCeen = () => {
   },2000); 
   return (
     <div>  
-      { loading ?  <Loader /> :<NavBar />} 
+      { loading &&  <MemoizedLoader /> } 
+      <MemoisedNavBar />
     </div>
   );
 };

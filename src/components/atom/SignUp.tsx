@@ -11,4 +11,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export const  MemoizedSignUp = React.memo(SignUp);

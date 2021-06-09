@@ -23,10 +23,9 @@ const MobileNav = () => {
           <a className="nav-link" href="#faq">FAQ</a>
         </li>
       </ul>
-      {/* end of nav menu items */}
     </nav>
     
   );
 };
 
-export default MobileNav;
+export const  MemoizedMobileNav = React.memo(MobileNav);
