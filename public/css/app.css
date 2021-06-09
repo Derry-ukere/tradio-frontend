@@ -7566,9 +7566,24 @@ body.boxed-layout .switchable__image {
     height: 100%;
     width: 50%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 100;
     opacity: 0;
-    /* visibility: hidden; */
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .hide {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    opacity: 0;
+    display: none;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;

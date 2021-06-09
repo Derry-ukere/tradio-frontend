@@ -1,6 +1,11 @@
 import React from 'react';
+import {MemoizedBackdrop} from '../molecule/Backdrop';
 
-const MobileNav = () => {
+interface ToggleProps {
+  clickHandlerTwo: () => void;
+  state: boolean;
+}
+const MobileNav = (props :ToggleProps ) => {
   return (
     <nav>
       <ul className="navbar-nav" id="navbar-nav">
@@ -21,6 +26,7 @@ const MobileNav = () => {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#faq">FAQ</a>
+          <MemoizedBackdrop clickHandlerTwo = {props.clickHandlerTwo} state = {props.state}/>
         </li>
       </ul>
     </nav>

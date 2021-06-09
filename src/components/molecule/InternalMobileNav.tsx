@@ -1,20 +1,19 @@
 import React from 'react';
 import {MemoizedCloseToggleButton} from '../atom/CloseToggleButton';
 import {MemoizedMobileNav} from '../atom/MobileNav';
-import {MemoizedBackdrop} from '../molecule/Backdrop';
 
 
 interface ToggleProps {
 clickHandler : (event: React.MouseEvent<HTMLButtonElement>) => void;
 clickHandlerTwo: () => void;
+state : boolean;
 }
 
 const InternalMobileNav = (props:ToggleProps) => {
   return (
     <div className="navbar-inner">
-      <MemoizedBackdrop clickHandlerTwo = {props.clickHandlerTwo}/>
       <MemoizedCloseToggleButton ClickHandler = {props.clickHandler} />
-      <MemoizedMobileNav />
+      <MemoizedMobileNav clickHandlerTwo = {props. clickHandlerTwo} state = {props.state}/>
     </div>
   );
 };
