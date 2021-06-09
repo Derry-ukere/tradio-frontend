@@ -7,6 +7,8 @@ import React,{useState} from 'react';
 // import {RootState} from '../../store';
 import {MemoisedNavBar} from '../../organism/nav/Nav';
 import {MemoizedLoader} from '../../atom/Loader';
+import {MemoizedHero} from '../../organism/Hero';
+import {MemoizedFooter} from '../../organism/Footer';
 
 
 const HomeSCeen = () => {
@@ -25,6 +27,8 @@ const HomeSCeen = () => {
     <div>  
       { loading &&  <MemoizedLoader /> } 
       <MemoisedNavBar />
+      <MemoizedHero />
+      <MemoizedFooter />
     </div>
   );
 };
