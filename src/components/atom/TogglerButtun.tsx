@@ -12,4 +12,4 @@ const TogglerButtun = (props : ToggleProps ) => {
   );
 };
 
-export default TogglerButtun;
+export const  MemoizedTogglerButtun = React.memo(TogglerButtun);

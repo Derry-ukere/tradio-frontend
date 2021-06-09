@@ -22,4 +22,4 @@ const Loader = () => {
   );
 };
 
-export default Loader;
+export const MemoizedLoader = React.memo(Loader);

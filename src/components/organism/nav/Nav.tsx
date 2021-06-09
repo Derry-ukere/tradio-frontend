@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
-import TogglerButtun from '../../atom/TogglerButtun';
-import InternalMobileNav from '../../molecule/InternalMobileNav';
-import Brand from '../../atom/Brand';
-import Authen from '../../molecule/Authen';
+import {MemoizedTogglerButtun} from '../../atom/TogglerButtun';
+import {MemoizedInternalMobileNav} from '../../molecule/InternalMobileNav';
+import {MemoizedBrand} from '../../atom/Brand';
+import {MemoizedAuthen} from '../../molecule/Authen';
 
 const Nav = () => {
   const [sideDrawerOpen, setsideDrawerOpen] = useState(false);
@@ -15,6 +15,9 @@ const Nav = () => {
     setsideDrawerOpen((prevState)=> !prevState);
   };
 
+  const backdroHandler = ()=> {
+    setsideDrawerOpen((prevState)=> !prevState);
+  };
   // eslint-disable-next-line quotes
   const open = "navbar navbar-sticky sticky-bg-color--dark navbar-expand-lg navbar-dark active";
   // eslint-disable-next-line quotes
@@ -22,18 +25,15 @@ const Nav = () => {
   return (
     <header className={sideDrawerOpen ? open : close}>
       <div className="container-fluid position-relative">
-        <Brand />
-        {/*  End of brand logo */}
-        <TogglerButtun ClickHandler = {openDrawer}/>
-        {/* end of Nav toggler */}
-        <InternalMobileNav clickHandler = {closeDrawer}/>
-        <Authen />
-        {/* end of nav cta button */}
+        <MemoizedBrand />
+        <MemoizedTogglerButtun ClickHandler = {openDrawer}/>
+        <MemoizedInternalMobileNav clickHandler = {closeDrawer} clickHandlerTwo = {backdroHandler}/>
+        <MemoizedAuthen />
       </div>
-      {/* end of container */}
     </header>
   
   );
 };
 
-export default Nav;
+export const  MemoisedNavBar = React.memo(Nav);
+ 
