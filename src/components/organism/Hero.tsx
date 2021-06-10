@@ -1,6 +1,6 @@
 import React from 'react';
-import {MemoizedHeroInage} from '../atom/HeroInage';
-import {MemoizedHeroBody} from '../molecule/HeroBody';
+import {MemoizedHeroInage} from '../atom/hero/HeroInage';
+import {MemoizedHeroBody} from '../molecule/hero/HeroBody';
 
 export const Hero = () => {
   return (

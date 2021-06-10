@@ -1,6 +1,6 @@
 import React from 'react';
-import {MemoizedCloseToggleButton} from '../atom/CloseToggleButton';
-import {MemoizedMobileNav} from '../atom/MobileNav';
+import {MemoizedCloseToggleButton} from '../../atom/nav/CloseToggleButton';
+import {MemoizedMobileNav} from '../../atom/nav/MobileNav';
 
 
 interface ToggleProps {

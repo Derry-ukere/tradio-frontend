@@ -1,7 +1,7 @@
 import React from 'react';
-import {MemoizedLogin} from '../atom/Login';
-import {MemoizedSignUp} from '../atom/SignUp';
-import {MemoizedFlag} from '../atom/Flag';
+import {MemoizedLogin} from '../../atom/nav/Login';
+import {MemoizedSignUp} from '../../atom/nav/SignUp';
+import {MemoizedFlag} from '../../atom/nav/Flag';
 
 const Authen = () => {
   return (

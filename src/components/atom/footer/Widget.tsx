@@ -9,12 +9,12 @@ const Widget = () => {
                             text-center text-lg-left
                         ">
       <span className="mb-2">
-        <img src="img/brand-logo-white.png" alt="brand-logo" />
+        <img src="img/logo.png" alt="brand-logo" />
       </span>
       <p className="text-color--300">
           The main objectives of the project are to meet the needs of
           cryptocurrency projects and users for traditional services, and
-          to provide access to investment product.
+          to provide access to investment product
       </p>
     </div>
   );
