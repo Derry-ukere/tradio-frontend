@@ -51,7 +51,7 @@ const ButtomWidget = () => {
       </ul>
       {/* end of nav item */}
       <p className="text-color--400 font-size--14">
-    © 2018 <a href="#" className="text-color--400">Tradio Technologies</a>. All
+    © 2021 <a href="#" className="text-color--400">Tradio Technologies</a>. All
     Rights Reserved.
       </p>
     </div>

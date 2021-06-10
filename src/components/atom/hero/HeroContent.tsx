@@ -14,12 +14,12 @@ const HeroContent = () => {
       <div className="hero-content">
         <h1 className="hero__title h2-font mb-2">
 Building solutions for inheritance, asset distribution and asset
-control!
+control
         </h1>
         <p className="hero__description font-size--20 mb-3 mb-lg-5 mb-md-6">
 By using Blockchain technology, we aim to get making service
 faster and cheaper. For more information, you can read the
-whitepaper.
+whitepaper
         </p>
         <a href="#" className="
             btn
@@ -28,7 +28,7 @@ whitepaper.
             btn-hover--3d btn-hover--splash
             mb-2
         ">
-          <span className="btn__text">Contribute Now</span>
+          <span className="btn__text">Get Started Now</span>
         </a>
         <p className="color--white font-w--600">
           <span className="color--primary">15% OFF</span> only in October

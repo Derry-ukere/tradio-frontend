@@ -2,9 +2,9 @@
 import * as React from 'react';
 import {act} from 'react-dom/test-utils';
 import { render, unmountComponentAtNode } from 'react-dom';
-import {Brand} from './Brand';
-import {CloseToggleButton} from './CloseToggleButton';
-import {Flag} from './Flag';
+import {Brand} from './nav/Brand';
+import {CloseToggleButton} from './nav/CloseToggleButton';
+import {Flag} from './nav/Flag';
 
 
 let container: Element;

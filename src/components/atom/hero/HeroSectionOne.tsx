@@ -1,6 +1,6 @@
 import React from 'react';
-import {MemoizedHeroContent} from '../atom/HeroContent';
-import {MemoizedHeroSocialMediaIcons} from '../atom/HeroSocialMediaIcons';
+import {MemoizedHeroContent} from '../hero/HeroContent';
+import {MemoizedHeroSocialMediaIcons} from '../hero/HeroSocialMediaIcons';
 
 const HeroSectionOne = () => {
   return (

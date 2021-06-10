@@ -1,5 +1,5 @@
 import React from 'react';
-import {MemoizedHeroSectionOne} from '../atom/HeroSectionOne';
+import {MemoizedHeroSectionOne} from '../../atom/hero/HeroSectionOne';
 
 const HeroBody = () => {
   return (
