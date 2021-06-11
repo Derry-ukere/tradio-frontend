@@ -12,6 +12,15 @@ import {MemoizedDivider} from '../../atom/footer/Divider';
 import {MemoizedFooter} from '../../organism/Footer';
 import {MemoizedPayment} from '../../organism/Payment';
 import {MemoiseAbout} from '../../organism/About';
+import {MemoProblems} from '../../organism/Problems';
+import {MemoFeatures} from '../../organism/Features';
+import {MemoHowItWorks} from '../../organism/HowItWorks';
+import {MemBenefits} from '../../organism/Benefits';
+import {MemTokenDetails} from '../../organism/TokenDetails';
+import {MemSaleInfo} from '../../organism/SaleInfo';
+import {MemTeam} from '../../organism/Team';
+import {MemFaq} from '../../organism/Faq';
+import {MemPartner} from '../../organism/Partner';
 
 const HomeSCeen = () => {
   // const dispatch = useDispatch();
@@ -26,16 +35,26 @@ const HomeSCeen = () => {
     setLoading(false);
   },2000); 
   return (
-    <main className="main" > 
+    <>
       { loading &&  <MemoizedLoader /> } 
       <MemoisedNavBar />
       <MemoizedHero />
       <MemoizedIcoSection />
       <MemoizedPayment />
       <MemoiseAbout />
+      <MemoProblems />
+      <MemoFeatures />
+      <MemoHowItWorks />
+      <MemBenefits />
+      <MemTokenDetails />
+      <MemSaleInfo />
+      <MemTeam />
+      <MemFaq />
+      <MemPartner />
+
       <MemoizedDivider/>
       <MemoizedFooter />
-    </main>
+    </>
   );
 };
 
