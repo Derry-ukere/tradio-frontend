@@ -21,6 +21,7 @@ import {MemSaleInfo} from '../../organism/SaleInfo';
 import {MemTeam} from '../../organism/Team';
 import {MemFaq} from '../../organism/Faq';
 import {MemPartner} from '../../organism/Partner';
+import {MemRoadMap} from '../../organism/RoadMap';
 
 const HomeSCeen = () => {
   // const dispatch = useDispatch();
@@ -34,6 +35,7 @@ const HomeSCeen = () => {
   setTimeout(() =>{
     setLoading(false);
   },2000); 
+
   return (
     <>
       { loading &&  <MemoizedLoader /> } 
@@ -48,10 +50,10 @@ const HomeSCeen = () => {
       <MemBenefits />
       <MemTokenDetails />
       <MemSaleInfo />
+      <MemRoadMap />
       <MemTeam />
       <MemFaq />
       <MemPartner />
-
       <MemoizedDivider/>
       <MemoizedFooter />
     </>
@@ -59,3 +61,4 @@ const HomeSCeen = () => {
 };
 
 export default HomeSCeen;
+
