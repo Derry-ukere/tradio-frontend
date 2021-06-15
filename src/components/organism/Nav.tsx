@@ -18,7 +18,6 @@ const Nav = () => {
 
   useEffect(() => {
     window.addEventListener('scroll',handleScroll);
-    console.log('effect called');
   },[]);
 
   

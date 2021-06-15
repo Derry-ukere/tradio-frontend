@@ -1,6 +1,40 @@
-import React from 'react';
+/* eslint-disable security/detect-object-injection */
+import React,{useState,useEffect } from 'react';
 
 const PricingInfo = () => {
+
+
+  const calculateTimeLeft = () => {
+    const year = new Date().getFullYear();
+    const difference = +new Date(`10/01/${year}`) - +new Date();
+    let timeLeft = {};
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+      };
+    }
+    const timerComponents: any = [];
+
+    Object.values(timeLeft).forEach((interval) => {
+      timerComponents.push(interval);
+    });
+    return timerComponents;
+  };
+
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft()); 
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+  });
+
+ 
+
   return (
       
     <>
@@ -46,7 +80,7 @@ const PricingInfo = () => {
                         opacity--80
                         font-size--30
                         font-w--600
-                    " id="days">-620</span>
+                    " id="days">{timeLeft[0]}</span>
             <span className="text-color--400">Days</span>
           </li>
           <li className="d-flex flex-column mr-2 mr-sm-3">
@@ -56,7 +90,7 @@ const PricingInfo = () => {
                         opacity--80
                         font-size--30
                         font-w--600
-                    " id="hours">-17</span>
+                    " id="hours">{timeLeft[1]}</span>
             <span className="text-color--400">Hours</span>
           </li>
           <li className="d-flex flex-column mr-2 mr-sm-3">
@@ -66,7 +100,7 @@ const PricingInfo = () => {
                         opacity--80
                         font-size--30
                         font-w--600
-                    " id="minutes">-8</span>
+                    " id="minutes">{timeLeft[2]}</span>
             <span className="text-color--400">Minutes</span>
           </li>
           <li className="d-flex flex-column">
@@ -76,7 +110,7 @@ const PricingInfo = () => {
                         opacity--80
                         font-size--30
                         font-w--600
-                    " id="seconds">-58</span>
+                    " id="seconds">{timeLeft[3]}</span>
             <span className="text-color--400">Seconds</span>
           </li>
         </ul>
