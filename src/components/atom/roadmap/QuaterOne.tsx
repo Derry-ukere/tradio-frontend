@@ -1,8 +1,22 @@
+/* eslint-disable quotes */
 import React from 'react';
+// import {CountContext} from './Body';
 
 const QuaterOne = () => {
+  // const context = useContext(CountContext);
+  // const count =  context?.countState;
+  // const checkCount = (num: number)=> count && count === num;
+
+
+  // useEffect(()=>{
+  //   console.log('count -1 is ', checkCount(-1));
+  // },[count]);
+
+  // const oldClass = "slide mb-1 slick-slide";
+  // const newClass = "slide mb-1 slick-slide slick-current slick-active";
+
   return (
-    <div className="slide mb-1 slick-slide slick-current slick-active" data-year={2017} style={{width: '459px'}} tabIndex={-1} data-slick-index={0} aria-hidden="true">
+    <div className="slide mb-1 slick-slide " data-year={2017} style={{width: '510px'}} tabIndex={0} data-slick-index={0} aria-hidden="true">
       <div className="d-md-flex align-items-md-center">
         <div className="
                           mr-5

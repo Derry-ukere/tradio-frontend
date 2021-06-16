@@ -13,7 +13,7 @@ const Row = () => {
                                 pt-5
                                 reveal
                             ">
-          <img src="img/mamber-11.png" alt="mamber" className="img-fluid" />
+          <img src="img/img1.png" alt="mamber" className="img-fluid" />
           <div className="card-body align-items-center">
             <h3 className="h6-font font-w--600 color--primary">
               Elizabeth Guzman
@@ -33,7 +33,7 @@ const Row = () => {
                                 pt-5
                                 reveal
                             ">
-          <img src="img/mamber-2.png" alt="mamber" className="img-fluid" />
+          <img src="img/img2.png" alt="mamber" className="img-fluid" />
           <div className="card-body align-items-center">
             <h3 className="h6-font font-w--600 color--primary">
               Tom Castro
@@ -53,7 +53,7 @@ const Row = () => {
                                 pt-5
                                 reveal
                             ">
-          <img src="img/mamber-3.png" alt="mamber" className="img-fluid" />
+          <img src="img/img3.png" alt="mamber" className="img-fluid" />
           <div className="card-body align-items-center">
             <h3 className="h6-font font-w--600 color--primary">
               Steven Clark
@@ -73,7 +73,7 @@ const Row = () => {
                                 pt-5
                                 reveal
                             ">
-          <img src="img/mamber-4.png" alt="mamber" className="img-fluid" />
+          <img src="img/img4.jpeg" alt="mamber" className="img-fluid" />
           <div className="card-body align-items-center">
             <h3 className="h6-font font-w--600 color--primary">
               Phoebe Watkins

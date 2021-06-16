@@ -1,6 +1,27 @@
+/* eslint-disable quotes */
 import React from 'react';
 
-const Row = () => {
+interface propType {
+  show : boolean
+  click : () => void
+}
+
+
+const Row = (props : propType) => {
+
+
+
+  const btnOldClass = "btn btn-header btn-link collapsed";
+  const btnNewClass = "btn btn-header btn-link ";
+
+
+  const divNewClass =   "collapse show";
+  const divoldClass =   "collapse";
+
+  
+
+  //aria expand renders on condition
+
   return (
     <div className="row">
       <div className="col-12 col-lg-4">
@@ -14,8 +35,8 @@ const Row = () => {
       {/* end of section title col */}
       <div className="col-12 col-lg-8">
         <div className="accordion accordion--v1 remove-space--bottom reveal" id="accordion1">
-          <div className="card mb-1">
-            <button className="btn btn-header btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          <div className="card mb-1" onClick = {props.click}>
+            <button className={props.show ? btnNewClass : btnOldClass} type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
               <span className="
                                     h6-font
                                     text-color--200
@@ -24,7 +45,7 @@ const Row = () => {
                                 ">What is Cyrpto Tradio token?</span>
               <i className="icon icon-up-arrow" />
             </button>
-            <div id="collapse1" className="collapse show" data-parent="#accordion1">
+            <div id="collapse1" className={props.show ? divNewClass : divoldClass} data-parent="#accordion1">
               <div className="card-body pl-3">
                 <p>
           Our product solves crucial problems of such
@@ -42,7 +63,7 @@ const Row = () => {
           </div>
           {/* end of single accordion*/}
           <div className="card mb-1">
-            <button className="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            <button className={props.show ? btnNewClass : btnOldClass} type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
               <span className="
                                     h6-font
                                     text-color--200
@@ -51,7 +72,7 @@ const Row = () => {
                                 ">Do we already have an application?</span>
               <i className="icon icon-up-arrow" />
             </button>
-            <div id="collapse2" className="collapse" data-parent="#accordion1">
+            <div id="collapse2" className={props.show ? divNewClass : divoldClass} data-parent="#accordion1">
               <div className="card-body pl-3">
                 <p>
           Our product solves crucial problems of such

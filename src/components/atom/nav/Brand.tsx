@@ -4,6 +4,8 @@ export const Brand = () => {
   return (
     <a className="navbar-brand" href="/#howitworks" data-testid="brand" >
       <img className="navbar-brand__regular" src="img/logo.png" alt="brand-logo" />
+      <img className="navbar-brand__sticky" src="img/logo.png" alt="brand-logo" />
+
     </a>
   );
 };

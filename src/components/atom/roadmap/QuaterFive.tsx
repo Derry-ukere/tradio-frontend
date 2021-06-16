@@ -1,8 +1,20 @@
 import React from 'react';
+// import {CountContext} from './Body';
+
 
 const QuaterFive = () => {
+  // const context = useContext(CountContext);
+  // const count =  context?.countState;
+
+  // useEffect(()=>{
+  //   console.log('from quater five',count);
+  // },[count]);
+
+
+
+
   return (
-    <div className="slide mb-1 slick-slide slick-current slick-active" data-year={2018} style={{width: '459px'}} tabIndex={0} data-slick-index={4} aria-hidden="false">
+    <div className="slide mb-1 slick-slide " data-year={2018} style={{width: '459px'}} tabIndex={-1} data-slick-index={4} aria-hidden="true">
       <div className="d-md-flex align-items-md-center">
         <div className="
                           mr-5
