@@ -6,7 +6,6 @@ const Container = () => {
   return (
     <div className="container">
       <MemTitle />
-      {/* end of section title row */}
       <MemRow /> 
     </div>
   );
