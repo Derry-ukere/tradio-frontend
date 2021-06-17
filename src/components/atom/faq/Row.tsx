@@ -1,203 +1,48 @@
 /* eslint-disable quotes */
 import React from 'react';
+import Card from './Card';
+import {faq} from '../../../data/faq';
 
-interface propType {
-  show : boolean
-  click : () => void
-}
+// interface propType {
+//   show : boolean
+//   click : () => void 
+// }
 
+// const faqw =    {
+//   id:1,
+//   question:'What is crypto space token',
+//   answer:'Our product solves crucial problems of such giant services as Foursquare & Swarm, Groupon, and Tripadvisor. Millenial travelers don’t possess any more countless hours for preparing the trip itinerary (reading Tripadvisor). Business travelers, in particular, complain they are having maximum 2 to 5 free hours during their work trips, which they don’t want to spend on researching what is worth doing around.',
+//   state: show,
+//   run :  () =>{
+//     setshow((prev) => !prev);
+//   }
+// },
 
-const Row = (props : propType) => {
+const Row = () => {
+  // const data = faq[0].one();
 
-
-
-  const btnOldClass = "btn btn-header btn-link collapsed";
-  const btnNewClass = "btn btn-header btn-link ";
-
-
-  const divNewClass =   "collapse show";
-  const divoldClass =   "collapse";
-
+  // useEffect(()=>{
+  //   faq.map((i)=>{
+  //     console.log('single', i.data);
+  //   });
+  // },[]);
   
-
-  //aria expand renders on condition
 
   return (
     <div className="row">
       <div className="col-12 col-lg-4">
         <div className="text-center text-sm-left mb-5 mb-lg-7 reveal">
           <h2 className="h3-font mb-2">
-    Frequently <br />
-    asked questions
+            Frequently <br />
+            asked questions
           </h2>
         </div>
       </div>
       {/* end of section title col */}
       <div className="col-12 col-lg-8">
         <div className="accordion accordion--v1 remove-space--bottom reveal" id="accordion1">
-          <div className="card mb-1" onClick = {props.click}>
-            <button className={props.show ? btnNewClass : btnOldClass} type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-              <span className="
-                                    h6-font
-                                    text-color--200
-                                    text-left
-                                    font-w--600
-                                ">What is Cyrpto Tradio token?</span>
-              <i className="icon icon-up-arrow" />
-            </button>
-            <div id="collapse1" className={props.show ? divNewClass : divoldClass} data-parent="#accordion1">
-              <div className="card-body pl-3">
-                <p>
-          Our product solves crucial problems of such
-          giant services as Foursquare &amp; Swarm, Groupon,
-          and Tripadvisor. Millenial travelers don’t
-          possess any more countless hours for preparing
-          the trip itinerary (reading Tripadvisor).
-          Business travelers, in particular, complain they
-          are having maximum 2 to 5 free hours during
-          their work trips, which they don’t want to spend
-          on researching what is worth doing around.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* end of single accordion*/}
-          <div className="card mb-1">
-            <button className={props.show ? btnNewClass : btnOldClass} type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-              <span className="
-                                    h6-font
-                                    text-color--200
-                                    text-left
-                                    font-w--600
-                                ">Do we already have an application?</span>
-              <i className="icon icon-up-arrow" />
-            </button>
-            <div id="collapse2" className={props.show ? divNewClass : divoldClass} data-parent="#accordion1">
-              <div className="card-body pl-3">
-                <p>
-          Our product solves crucial problems of such
-          giant services as Foursquare &amp; Swarm, Groupon,
-          and Tripadvisor. Millenial travelers don’t
-          possess any more countless hours for preparing
-          the trip itinerary (reading Tripadvisor).
-          Business travelers, in particular, complain they
-          are having maximum 2 to 5 free hours during
-          their work trips, which they don’t want to spend
-          on researching what is worth doing around.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* end of single accordion*/}
-          <div className="card mb-1">
-            <button className="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-              <span className="
-                                    h6-font
-                                    text-color--200
-                                    text-left
-                                    font-w--600
-                                ">Why blockchain?</span>
-              <i className="icon icon-up-arrow" />
-            </button>
-            <div id="collapse3" className="collapse" data-parent="#accordion1">
-              <div className="card-body pl-3">
-                <p>
-          Our product solves crucial problems of such
-          giant services as Foursquare &amp; Swarm, Groupon,
-          and Tripadvisor. Millenial travelers don’t
-          possess any more countless hours for preparing
-          the trip itinerary (reading Tripadvisor).
-          Business travelers, in particular, complain they
-          are having maximum 2 to 5 free hours during
-          their work trips, which they don’t want to spend
-          on researching what is worth doing around.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* end of single accordion*/}
-          <div className="card mb-1">
-            <button className="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-              <span className="
-                                    h6-font
-                                    text-color--200
-                                    text-left
-                                    font-w--600
-                                ">When is the Tradio token going to be
-        transferable?</span>
-              <i className="icon icon-up-arrow" />
-            </button>
-            <div id="collapse4" className="collapse" data-parent="#accordion1">
-              <div className="card-body pl-3">
-                <p>
-          Our product solves crucial problems of such
-          giant services as Foursquare &amp; Swarm, Groupon,
-          and Tripadvisor. Millenial travelers don’t
-          possess any more countless hours for preparing
-          the trip itinerary (reading Tripadvisor).
-          Business travelers, in particular, complain they
-          are having maximum 2 to 5 free hours during
-          their work trips, which they don’t want to spend
-          on researching what is worth doing around.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* end of single accordion*/}
-          <div className="card mb-1">
-            <button className="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-              <span className="
-                                    h6-font
-                                    text-color--200
-                                    text-left
-                                    font-w--600
-                                ">In what currency will the funds be collected?</span>
-              <i className="icon icon-up-arrow" />
-            </button>
-            <div id="collapse5" className="collapse" data-parent="#accordion1">
-              <div className="card-body pl-3">
-                <p>
-          Our product solves crucial problems of such
-          giant services as Foursquare &amp; Swarm, Groupon,
-          and Tripadvisor. Millenial travelers don’t
-          possess any more countless hours for preparing
-          the trip itinerary (reading Tripadvisor).
-          Business travelers, in particular, complain they
-          are having maximum 2 to 5 free hours during
-          their work trips, which they don’t want to spend
-          on researching what is worth doing around.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* end of single accordion*/}
-          <div className="card mb-1">
-            <button className="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-              <span className="
-                                    h6-font
-                                    text-color--200
-                                    text-left
-                                    font-w--600
-                                ">Where can I store INT token?</span>
-              <i className="icon icon-up-arrow" />
-            </button>
-            <div id="collapse6" className="collapse" data-parent="#accordion1">
-              <div className="card-body pl-3">
-                <p>
-          Our product solves crucial problems of such
-          giant services as Foursquare &amp; Swarm, Groupon,
-          and Tripadvisor. Millenial travelers don’t
-          possess any more countless hours for preparing
-          the trip itinerary (reading Tripadvisor).
-          Business travelers, in particular, complain they
-          are having maximum 2 to 5 free hours during
-          their work trips, which they don’t want to spend
-          on researching what is worth doing around.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* end of single accordion*/}
+          {faq.map((faq)=> <Card  faq = {faq.getData}/>)}
+          {/* <Card  faq = {data}/> */}
         </div>
       </div>
     </div>

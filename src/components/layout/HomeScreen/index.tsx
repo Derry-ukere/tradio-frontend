@@ -22,6 +22,7 @@ import {MemTeam} from '../../organism/Team';
 import {MemFaq} from '../../organism/Faq';
 import {MemPartner} from '../../organism/Partner';
 import {MemRoadMap} from '../../organism/RoadMap';
+// import Testimonial from '../../organism/Testimonial';
 
 const HomeSCeen = () => {
   // const dispatch = useDispatch();
@@ -50,7 +51,8 @@ const HomeSCeen = () => {
       <MemBenefits />
       <MemTokenDetails />
       <MemSaleInfo />
-      <MemRoadMap />
+      < MemRoadMap />
+      {/* <Testimonial /> */}
       <MemTeam />
       <MemFaq />
       <MemPartner />

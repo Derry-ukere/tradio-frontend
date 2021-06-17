@@ -30,11 +30,13 @@ const Nav = () => {
   };
 
   const backdroHandler = ()=> {
-    setsideDrawerOpen((prevState)=> !prevState);
+    setTimeout(()=>{
+      setsideDrawerOpen((prevState)=> !prevState);
+    }, 500);
   };
   
   // eslint-disable-next-line quotes
-  const open = "navbar navbar-sticky sticky-bg-color--dark navbar-expand-lg navbar-dark active";
+  const open = "navbar navbar-sticky sticky-bg-color--dark navbar-expand-lg navbar-dark active navbar-sticky--moved-up navbar-sticky--transitioned navbar-sticky--on";
   // eslint-disable-next-line quotes
   if(scrolled){
     close = 'navbar navbar-sticky sticky-bg-color--dark navbar-expand-lg navbar-dark navbar-sticky--moved-up navbar-sticky--transitioned navbar-sticky--on';
