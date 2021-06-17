@@ -2,7 +2,7 @@ import React from 'react';
 
 const PieChart = () => {
   return (
-    <div className="content dist-content">
+    <div className="content dist-content direct">
       <h3 className="h4-font font-w--600 mb-3">Token Distribution</h3>
       <ul className="content-list list-unstyled remove-space--bottom">
         <li className="

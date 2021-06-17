@@ -2,7 +2,7 @@ import React from 'react';
 
 const BottomRow = () => {
   return (
-    <div className="col-12 col-lg-4 ml-auto">
+    <div className="col-12 col-lg-4 ml-auto direct">
       <div className="content allocation-content reveal">
         <h3 className="h4-font font-w--600 mb-3">Token Allocation</h3>
         <div className="

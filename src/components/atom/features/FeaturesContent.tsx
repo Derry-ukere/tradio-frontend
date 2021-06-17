@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeaturesContent = () => {
   return (
-    <div className="row justify-content-between">
+    <div className="row justify-content-between direct">
       <div className="col-12 col-md-6 col-lg-5"> 
         <div className="d-lg-flex mb-4 text-center text-md-left reveal">
           <span className="mb-3 mb-lg-0 mr-md-3 mt-lg-1">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ButtomWidget = () => {
   return (
-    <div className="col-12 col-lg-6 ml-lg-auto text-center text-lg-right">
+    <div className="col-12 col-lg-6 ml-lg-auto text-center text-lg-right direct">
       <ul className="
                           icon-group icon-rounded
                           icon-rounded-color--gray

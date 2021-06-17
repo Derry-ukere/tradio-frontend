@@ -16,7 +16,7 @@ const QuaterOne = () => {
   // const newClass = "slide mb-1 slick-slide slick-current slick-active";
 
   return (
-    <div className="slide mb-1 slick-slide " data-year={2017} style={{width: '510px'}} tabIndex={0} data-slick-index={0} aria-hidden="true">
+    <div className="slide mb-1 slick-slide direct" data-year={2017} style={{width: '510px'}} tabIndex={0} data-slick-index={0} aria-hidden="true">
       <div className="d-md-flex align-items-md-center">
         <div className="
                           mr-5

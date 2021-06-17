@@ -7,6 +7,7 @@ const Widget = () => {
                             mx-auto
                             mb-4 mb-lg-0
                             text-center text-lg-left
+                            direct
                         ">
       <span className="mb-2">
         <img src="img/logo.png" alt="brand-logo" />
@@ -14,7 +15,7 @@ const Widget = () => {
       <p className="text-color--300">
           The main objectives of the project are to meet the needs of
           cryptocurrency projects and users for traditional services, and
-          to provide access to investment product
+          to provide access to investment product.
       </p>
     </div>
   );

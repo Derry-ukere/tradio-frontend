@@ -3,7 +3,7 @@ import React from 'react';
 const QuaterNine = () => {
   return (
       
-    <div className="slide mb-1 slick-slide" data-year={2019} style={{width: '459px'}} tabIndex={-1} data-slick-index={8} aria-hidden="true">
+    <div className="slide mb-1 slick-slide direct" data-year={2019} style={{width: '459px'}} tabIndex={-1} data-slick-index={8} aria-hidden="true">
       <div className="d-md-flex align-items-md-center">
         <div className="
                           mr-5
