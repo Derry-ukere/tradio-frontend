@@ -2,8 +2,8 @@ import React from 'react';
 
 const ProblemList = () => {
   return (
-    <div className="col-12 col-lg-6 reveal">
-      <ul className="pl-2">
+    <div className="col-12 col-lg-6 reveal ">
+      <ul className="pl-2 ">
         <li className="color--primary mb-3 h5-font">
           <h3 className="h5-font font-w--600 mb-1">Lack of transparency</h3>
           <p className="h6-font">

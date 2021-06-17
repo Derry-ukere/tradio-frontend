@@ -91,6 +91,11 @@ html {
   direction: ltr;
 }
 
+.form-position{
+  position :relative;
+  left: -100%;
+}
+
 *,
 *::before,
 *::after {
@@ -3815,7 +3820,7 @@ body.boxed-layout .switchable__image {
 }
 
 .form .input-group--rounded .btn {
-  left: 15px;
+  left: -50px;
 }
 
 .form-control {

@@ -10,7 +10,7 @@ const ColOne = () => {
                   pb-lg-5
                   reveal
               ">
-      <div className="col-12 col-md-6 col-lg-5">
+      <div className="col-12 col-md-6 col-lg-5 direct">
         <div className="d-lg-flex mb-4 mb-lg-0 text-center text-md-left">
           <span className="mb-3 mb-lg-0 mr-md-3">
             <img src="img/icon-decentralized.svg" alt="icon" />
@@ -28,7 +28,7 @@ const ColOne = () => {
         </div>
       </div>
       {/* end of single item col */}
-      <div className="col-12 col-md-6 col-lg-5">
+      <div className="col-12 col-md-6 col-lg-5 direct">
         <div className="d-lg-flex mb-4 mb-lg-0 text-center text-md-left">
           <span className="mb-3 mb-lg-0 mr-md-3">
             <img src="img/icon-p2p.svg" alt="icon" />

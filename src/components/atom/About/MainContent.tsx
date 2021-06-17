@@ -2,22 +2,22 @@ import React from 'react';
 
 const MainContent = () => {
   return (
-    <div className="col-12 col-lg-7 col-xl-6">
+    <div className="col-12 col-lg-7 col-xl-6 direct">
       <div className="text-center text-lg-left reveal">
         <h2 className="h3-font mb-3">
 Tradio is the future <br />
-Be part of the revolution
+Be part of the revolution.
         </h2>
         <h3 className="h5-font text-color--300 mb-3">
 The main objectives of the project are to meet the needs of
 cryptocurrency projects and users for traditional services, and
-to provide access to investment product
+to provide access to investment product.
         </h3>
         <p className="h6-font mb-3">
 The protocol uses blockchain technology to ensure the
 transparency and addressability of transactions. The Tradio
 solution also includes mechanism for ICT creation and a platform
-that allows projects to raise funds
+that allows projects to raise funds.
         </p>
         <div className="
              d-flex

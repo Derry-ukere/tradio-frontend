@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuaterFour = () => {
   return (
-    <div className="slide mb-1 slick-slide slick-current slick-active" data-year={2018} style={{width: '459px'}} tabIndex={0} data-slick-index={3} aria-hidden="false">
+    <div className="slide mb-1 slick-slide direct slick-current slick-active" data-year={2018} style={{width: '459px'}} tabIndex={0} data-slick-index={3} aria-hidden="false">
 
       <div className="d-md-flex align-items-md-center">
         <div className="
