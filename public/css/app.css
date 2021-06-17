@@ -87,6 +87,10 @@ html {
   direction: rtl;
 }
 
+.direct {
+  direction: ltr;
+}
+
 *,
 *::before,
 *::after {
