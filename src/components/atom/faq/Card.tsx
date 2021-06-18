@@ -1,5 +1,5 @@
 /* eslint-disable quotes */
-import React,{useEffect} from 'react';
+import React from 'react';
 
 interface propType {
   faq: () => {
@@ -15,10 +15,6 @@ interface propType {
 const Card = (props : propType) => {
 
   const data = props.faq();
-
-  useEffect(()=>{
-    console.log('data', data);
-  },[]);
 
   const btnOldClass = "btn btn-header btn-link collapsed";
   const btnNewClass = "btn btn-header btn-link ";

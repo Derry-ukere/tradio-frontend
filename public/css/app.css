@@ -91,8 +91,8 @@ html {
   direction: ltr;
 }
 
-.form-position{
-  position :relative;
+.form-position {
+  position: relative;
   left: -100%;
 }
 
@@ -798,6 +798,9 @@ p {
   color: #cdcdd9;
 }
 
+.derryko {
+  left: 50px;
+}
 .section--darkblue .text-color--200 {
   color: #e2e7f8;
 }
@@ -868,7 +871,7 @@ textarea,
 .section--dark input,
 .section--dark textarea,
 .section--dark .form-control {
-  color: white;
+  color: black;
 }
 
 input:focus,

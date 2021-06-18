@@ -3,7 +3,7 @@ import {MemoizedIcoContainer} from '../molecule/ico/IcoContainer';
 
 const IcoSection = () => {
   return (
-    <section className="ico-progress ico-progress--v2 section--dark bg-color--dark--1">
+    <section className="ico-progress ico-progress--v2 section--dark bg-color--dark--1" id = "ico">
       < MemoizedIcoContainer />
     </section>
   );

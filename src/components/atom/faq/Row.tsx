@@ -41,7 +41,7 @@ const Row = () => {
       {/* end of section title col */}
       <div className="col-12 col-lg-8">
         <div className="accordion accordion--v1 remove-space--bottom reveal" id="accordion1">
-          {faq.map((faq)=> <Card  faq = {faq.getData}/>)}
+          {faq.map((faq, i)=> <Card key = {i} faq = {faq.getData}/>)}
           {/* <Card  faq = {data}/> */}
         </div>
       </div>
