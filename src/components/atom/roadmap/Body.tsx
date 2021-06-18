@@ -1,4 +1,4 @@
-import React ,{useReducer,useEffect,Dispatch} from 'react';
+import React ,{useReducer,Dispatch} from 'react';
 import {MemOverlay} from './Overlay';
 import {MemQuatersContainer} from './QuatersContainer';
 
@@ -34,9 +34,9 @@ const reducer = (state :stateType,  action: actionType) =>{
     case 'decrement-count':
       return {...state, count : state.count - 1};
     case 'increment-pixel':
-      return {...state, pixels: state.pixels + 450};
+      return {...state, pixels: state.pixels - 510};
     case 'decrement-pixel':
-      return {...state, pixels: state.pixels - 450};
+      return {...state, pixels: state.pixels + 510};
     
     default:
       return state;
@@ -46,11 +46,7 @@ const reducer = (state :stateType,  action: actionType) =>{
 
 const Body = () => {
   const [preState, dispatch] = useReducer(reducer, initialState);
-  useEffect(()=>{
-    console.log('count from body is --',preState.count);
-    console.log('pixels from body is --',preState.pixels);
 
-  });
 
   const options = {
     contextState: preState,
