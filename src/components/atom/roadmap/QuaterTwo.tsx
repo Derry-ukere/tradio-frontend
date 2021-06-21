@@ -6,7 +6,7 @@ const QuaterTwo = () => {
       <div className="d-md-flex align-items-md-center">
         <div className="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
           <h5 className="slide__title font-size--26 text-color--200 font-w--600">
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center" >
               <span className="mr-2"><img src="img/avatar-3.png" alt="avatar" /></span>
               <div className="d-flex flex-column">
                 <span className="client-name font-size--17 font-w--600">Alan Rogers 8</span>

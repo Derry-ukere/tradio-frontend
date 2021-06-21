@@ -17,7 +17,7 @@ const QuaterOne = () => {
 
   return (
     <div className="slide mb-1 slick-slide direct slick-current slick-active" data-year={2017} style={{width: '510px', margin: '16px 0px'}} data-slick-index={1} aria-hidden="true" tabIndex={-1}>
-      <div className="d-md-flex align-items-md-center">
+      <div className="d-md-flex align-items-md-center"  style = {{display : 'flex', alignItems: 'center', justifyContent : 'center'}}>
         <div className="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
           <h5 className="slide__title font-size--26 text-color--200 font-w--600">
             <div className="d-flex align-items-center">

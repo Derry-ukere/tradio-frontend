@@ -23,7 +23,6 @@ const QuatersContainer = () => {
   const [disableDownButton, setDownDisableButton] = useState(true);
   const context = useContext(CountContext);
   const count =  context?.contextState.count;
-  const pixel =  context?.contextState.pixels;
 
 
 
@@ -31,7 +30,6 @@ const QuatersContainer = () => {
   const handleClickOne = () => {
     console.log('countfrom handleOne');
     context?.countDispatch({type: 'increment-count'}); 
-    context?.countDispatch({type: 'increment-pixel'});  
     if (count){
       setDownDisableButton(false);
     } 
@@ -43,7 +41,6 @@ const QuatersContainer = () => {
   const handleClickTwo = () => {
     console.log('countfrom handleTwo');
     context?.countDispatch({type: 'decrement-count'});
-    context?.countDispatch({type: 'decrement-pixel'});
     !count? setDownDisableButton(true) : setTopDisableButton(false);
   };
 
@@ -53,7 +50,7 @@ const QuatersContainer = () => {
       <div className="carosuel-slider--v6 slick-initialized slick-slider">
         <TopBuuton ClickHandler = {handleClickOne} disableButton = {disableTopButton}/>
         <div className="slick-list draggable" style={{height: '298.75px'}}>
-          <div className="slick-track" style={{opacity: 1, width: '4590px', transform: `translate3d(${pixel}px, 0px, 0px)`}}>
+          <div className="slick-track" style={{opacity: 1, width: '90%', transform: 'translate3d(0px, 0px, 0px)'}}>
             <MemQuaterOne />
             <MemQuaterTwo />
             <MemQuaterThree />

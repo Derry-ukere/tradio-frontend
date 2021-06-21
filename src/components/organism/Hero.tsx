@@ -4,7 +4,7 @@ import {MemoizedHeroBody} from '../molecule/hero/HeroBody';
 
 export const Hero = () => {
   return (
-    <section className="hero hero--v3 section--dark bg-color--dark--1 d-flex align-items-center hidden">
+    <section className="hero hero--v3 section--dark bg-color--dark--1 d-flex align-items-center hidden" id = "hero">
       <MemoizedHeroInage />
       < MemoizedHeroBody />
     </section>
