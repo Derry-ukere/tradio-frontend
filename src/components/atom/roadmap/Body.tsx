@@ -34,9 +34,9 @@ const reducer = (state :stateType,  action: actionType) =>{
     case 'decrement-count':
       return {...state, count : state.count - 1};
     case 'increment-pixel':
-      return {...state, pixels: state.pixels - 510};
-    case 'decrement-pixel':
       return {...state, pixels: state.pixels + 510};
+    case 'decrement-pixel':
+      return {...state, pixels: state.pixels - 510};
     
     default:
       return state;
