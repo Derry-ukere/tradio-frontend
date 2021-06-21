@@ -1,4 +1,4 @@
-import React, {useState,useContext} from 'react';
+import React, {useState,useContext , useEffect} from 'react';
 import ButtomButton from './ButtomButton';
 import TopBuuton from './TopBuuton';
 import {MemQuaterOne} from './QuaterOne';
@@ -14,21 +14,23 @@ import {CountContext} from './Body';
 
 const QuatersContainer = () => {
 
-  // const [count, setCount] = useState(-1);
- 
-  // const [showHeaderOne, setshowHeaderOne] = useState(true);
-  // const [showHeaderTwo] = useState(false);
-  // const [showHeaderThree] = useState(false);
+
   const [disableTopButton, setTopDisableButton] = useState(false);
   const [disableDownButton, setDownDisableButton] = useState(true);
   const context = useContext(CountContext);
   const count =  context?.contextState.count;
+  // const [show] = useState(false);
+  // const [showTwo] = useState(true);
 
-
+  useEffect(()=>{
+    console.log('count  from efect is', count);
+  },[]);
+  const checkCount  = (digit : number) =>  digit === count;
 
 
   const handleClickOne = () => {
-    console.log('countfrom handleOne');
+    // console.log('check count is --', checkCount( 3));
+    console.log('count is', count);
     context?.countDispatch({type: 'increment-count'}); 
     if (count){
       setDownDisableButton(false);
@@ -39,7 +41,7 @@ const QuatersContainer = () => {
   };
 
   const handleClickTwo = () => {
-    console.log('countfrom handleTwo');
+    console.log('count is', count);
     context?.countDispatch({type: 'decrement-count'});
     !count? setDownDisableButton(true) : setTopDisableButton(false);
   };
@@ -51,15 +53,15 @@ const QuatersContainer = () => {
         <TopBuuton ClickHandler = {handleClickOne} disableButton = {disableTopButton}/>
         <div className="slick-list draggable" style={{height: '298.75px'}}>
           <div className="slick-track" style={{opacity: 1, width: '90%', transform: 'translate3d(0px, 0px, 0px)'}}>
-            <MemQuaterOne />
-            <MemQuaterTwo />
-            <MemQuaterThree />
-            <QuaterFourMem />
-            <QuaterFiveMem />
-            <QuaterSixMem />
-            <QuaterSevenMem />
-            <QuaterEightMem />
-            <QuaterNineM   />
+            {checkCount(-1) && <MemQuaterOne />}
+            {checkCount(0) && <MemQuaterTwo />}
+            {checkCount(1) &&<MemQuaterThree />}
+            {checkCount(2) && <QuaterFourMem />}
+            {checkCount(3) && <QuaterFiveMem />}
+            {checkCount(4) && <QuaterSixMem />}
+            {checkCount(5) &&  <QuaterSevenMem />}
+            {checkCount(6) && <QuaterEightMem />}
+            { checkCount(7) &&<QuaterNineM   />}
           </div>
         </div>
         < ButtomButton ClickHandler = {handleClickTwo} disableDownButton = {disableDownButton}/>
