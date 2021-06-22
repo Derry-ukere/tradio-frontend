@@ -51,7 +51,7 @@ const PricingInfo = () => {
             ">
           <span className="text-color--400 text-color--400">Current Price</span>
           <p className="font-size--20 font-w--700">
-0.00065 <span className="font-w--500">ETH</span>
+0.00512 <span className="font-w--500">BTC</span>
           </p>
           <span className="discount h6-font">15% OFF</span>
         </div>
@@ -59,7 +59,7 @@ const PricingInfo = () => {
         <div className="pricing-info-item">
           <span className="text-color--400 text-color--400">Next Price</span>
           <p className="font-size--20 font-w--700">
-0.00070 <span className="font-w--500">ETH</span>
+0.0079 <span className="font-w--500">BTC</span>
           </p>
           <span className="discount h6-font">15% OFF</span>
         </div>

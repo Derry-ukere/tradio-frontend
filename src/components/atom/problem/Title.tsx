@@ -5,8 +5,7 @@ const Title = () => {
     <div className="col-12 direct">
       <div className="text-center text-lg-left mb-5 mb-lg-6 reveal">
         <h2 className="h3-font">
-            Main problem of the <br />
-            current market?
+            Core Values <br />
         </h2>
       </div>
     </div>

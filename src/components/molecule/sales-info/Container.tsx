@@ -4,7 +4,7 @@ import {MemBody} from '../../atom/sales-info/Body';
 
 const Container = () => {
   return (
-    <div className="container">
+    <div className="container direct">
       <MemTitle />
       {/* end of section title row */}
       <MemBody />

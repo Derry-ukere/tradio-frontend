@@ -22,7 +22,8 @@ const ColTwo = () => {
             <p>
   Our crypto wallet function will use the bank's
   infrastructure for cold storage of funds with bank grade
-  security.
+  security.When you spend more time refining your trading mBTCodology,
+  you’re less likely to react emotionally under stressful trading events.
             </p>
           </div>
         </div>
@@ -35,12 +36,13 @@ const ColTwo = () => {
           </span>
           <div>
             <h3 className="h5-font font-w--600 text-color--200 mb-2">
-    True value creation
+            Cloud Management
             </h3>
             <p>
-  Using innovation and creativity, our community of
-  architects, developers revolutionaries believe in the
-  creation of a bid meets an ask.
+            Focus on managing and optimizing your trading strategies and 
+            let our team of professionals manage our secure, high-speed, global infrastructure.
+            Save hundreds of hours over the lifetime of your trading when you replicate and automate 
+            your manual trading tasks.
             </p>
           </div>
         </div>

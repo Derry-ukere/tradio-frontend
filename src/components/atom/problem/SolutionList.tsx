@@ -5,18 +5,11 @@ const SolutionList = () => {
     <div className="col-12 col-lg-6 reveal">
       <div className="bg-color--dark--1 border--around p-3 rounded--10">
         <h3 className="mb-2">Our solution</h3>
-        <p className="h6-font">
-        We have built smart contracts that release ICO funds to the
-        project only following the decision of its token buyers once the
-        project meets its milestones.
+        <p className="h6-font direct">
+        Since 2014, HaasOnline has democratized high-frequency trading on the most well-known digital asset platforms by leveraging integrations through APIs. HaasOnline products and technology are simple enough for any trader to use, yet robust enough to power some of the world’s most advanced automated trading algorithms
           <br />
           <br />
-        To create a transparent, decentralized infrastructure, where one
-        can track the targeted use of funds. Thanks to the W12 protocol,
-        any party can create a Tradio organization of the type they
-        need, set up its roadmap and determine the use of funds. Each
-        participant will be able to track and control funds, and assess
-        the impact of the contribution.
+          By making automated trading a valuable part of every crypto trader’s toolkit, HaasOnline is enabling pioneers in fintech  from cryptocurrency hobbyists to emerging institutional leaders  to create ingenious automated trading strategies.
         </p>
       </div>
     </div>
