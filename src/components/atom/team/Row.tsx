@@ -13,10 +13,10 @@ const Row = () => {
                                 pt-5
                                 reveal
                             ">
-          <img src="img/img1.png" alt="mamber" className="img-fluid" />
+          <img src="img/img2.png" alt="mamber" className="img-fluid" />
           <div className="card-body align-items-center">
             <h3 className="h6-font font-w--600 color--primary">
-              Elizabeth Guzman
+              Tom Castro
             </h3>
             <span className="font-size--14 opacity--80 font-w--500">Founder, CEO</span>
           </div>
@@ -33,10 +33,10 @@ const Row = () => {
                                 pt-5
                                 reveal
                             ">
-          <img src="img/img2.png" alt="mamber" className="img-fluid" />
+          <img src="img/img1.png" alt="mamber" className="img-fluid" />
           <div className="card-body align-items-center">
             <h3 className="h6-font font-w--600 color--primary">
-              Tom Castro
+            ElizabBTC Guzman
             </h3>
             <span className="font-size--14 opacity--80 font-w--500">Founder, CTO</span> 
           </div>
@@ -58,7 +58,7 @@ const Row = () => {
             <h3 className="h6-font font-w--600 color--primary">
               Steven Clark
             </h3>
-            <span className="font-size--14 opacity--80 font-w--500">Backend developer</span>
+            <span className="font-size--14 opacity--80 font-w--500">CMO</span>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ const Row = () => {
             <h3 className="h6-font font-w--600 color--primary">
               Phoebe Watkins
             </h3>
-            <span className="font-size--14 opacity--80 font-w--500">CMO</span>
+            <span className="font-size--14 opacity--80 font-w--500">Backend developer </span>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const MobileNav = (props :ToggleProps ) => {
           <Link className="nav-link" to="token-sale-details" onClick = {props.clickHandlerTwo} spy={true} smooth={true} offset={0} duration={750} >Token details</Link>
         </li>
         <li className="nav-item" >
-          <Link className="nav-link" to="roadmap" onClick = {props.clickHandlerTwo} spy={true} smooth={true} offset={0} duration={750} >Roadmap</Link>
+          <Link className="nav-link" to="roadmap" onClick = {props.clickHandlerTwo} spy={true} smooth={true} offset={0} duration={750} >Testimonials</Link>
         </li>
         <li className="nav-item" >
           <Link className="nav-link" to="team" onClick = {props.clickHandlerTwo} spy={true} smooth={true} offset={0} duration={750} >Team</Link>

@@ -26,7 +26,7 @@ const RowOne = () => {
                       h-100
                   ">
           <span className="body-font font-w--500 mb-1">Platform</span>
-          <span className="color--primary h4-font font-w--700">Ethereum</span>
+          <span className="color--primary h4-font font-w--700">Bitcoin</span>
         </div>
       </div>
       {/* end of single item col */}
@@ -53,8 +53,8 @@ const RowOne = () => {
                       w-100
                       h-100
                   ">
-          <span className="body-font font-w--500 mb-1">Available for sale</span>
-          <span className="color--primary h4-font font-w--700">1,000,000,000 INT</span>
+          <span className="body-font font-w--500 mb-1">Total Invested  </span>
+          <span className="color--primary h4-font font-w--700">7000,000 Btc</span>
         </div>
       </div>
       {/* end of single item col */}
@@ -68,7 +68,7 @@ const RowOne = () => {
                       h-100
                   ">
           <span className="body-font font-w--500 mb-1">ICO Price</span>
-          <span className="color--primary h4-font font-w--700">0.0002 ETH</span>
+          <span className="color--primary h4-font font-w--700">0.0002 BTC</span>
         </div>
       </div>
       {/* end of single item col */}
@@ -82,7 +82,7 @@ const RowOne = () => {
                       h-100
                   ">
           <span className="body-font font-w--500 mb-1">Hard Cap</span>
-          <span className="color--primary h4-font font-w--700">60 ETH</span>
+          <span className="color--primary h4-font font-w--700">60 BTC</span>
         </div>
       </div>
       {/* end of single item col */}

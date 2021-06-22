@@ -16,7 +16,7 @@ mb-8
 ">
         <span className="body-font text-color--400">Raised funds</span>
         <p className="color--primary font-size--24 font-w--700">
-7.5M ICT
+17.5M ICT
         </p>
       </div>
       <div className="ico-progress__text text-center mb-1 mb-sm-0">
@@ -28,7 +28,7 @@ mb-8
       <div className="ico-progress__text text-center text-sm-right">
         <span className="body-font text-color--400">Total USD Rised</span>
         <p className="color--primary font-size--24 font-w--700">
-$6.000.000
+$56.000.000
         </p>
       </div>
     </div>

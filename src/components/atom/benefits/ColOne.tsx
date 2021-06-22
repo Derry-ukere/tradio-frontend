@@ -17,12 +17,11 @@ const ColOne = () => {
           </span>
           <div>
             <h3 className="h5-font font-w--600 text-color--200 mb-2">
-        Decentralized
+            24/7/365 Trading
             </h3>
             <p>
-        We believe it is incredibly important to redistribute
-        this power &amp; profitability, and hand it back over to the
-        people - the real consumers, borrowers and lenders.
+            Our suite of trading tools are always connected.
+            Ready to execute trades and simultaneously process signals from a myriad of sources.
             </p>
           </div>
         </div>
@@ -35,12 +34,13 @@ const ColOne = () => {
           </span>
           <div>
             <h3 className="h5-font font-w--600 text-color--200 mb-2">
-        Peer to peer network
+            Advanced Crypto Trading
             </h3>
             <p>
-        Utilizing the power of the global community and the
-        sharing economy to tear down the barriers and
-        revolutionize the old &amp; inefficient financial systems.
+            Leverage advanced functionality such as custom order types, bot extensions,
+             market scanners, portfolio management, and much more.
+             Access powerful trading tools from your desktop, mobile, or tablet. 
+            Trade from anywhere you have an Internet connection with no software to install.
             </p>
           </div>
         </div>
