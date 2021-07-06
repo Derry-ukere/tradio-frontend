@@ -31,25 +31,6 @@ const ButtomWidget = () => {
           <a href="#" className="text-color--300"><i className="fab fa-youtube" /></a>
         </li>
       </ul>
-      {/* end of social icon */}
-      <ul className="
-                          list-unstyled
-                          d-flex
-                          flex-wrap
-                          justify-content-center justify-content-lg-end
-                          remove-space--x
-                      ">
-        <li className="mx-2 ml-lg-2">
-          <a href="#" className="body-font text-color--300">Terms &amp; Conditions</a>
-        </li>
-        <li className="mx-2 ml-lg-2">
-          <a href="#" className="body-font text-color--300">Privacy Policy</a>
-        </li>
-        <li className="mx-2 ml-lg-2">
-          <a href="#" className="body-font text-color--300">Cookie Preferences</a>
-        </li>
-      </ul>
-      {/* end of nav item */}
       <p className="text-color--400 font-size--14">
     © 2021 <a href="#" className="text-color--400">Tradio Technologies</a>. All
     Rights Reserved.
