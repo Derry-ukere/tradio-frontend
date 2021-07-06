@@ -42,8 +42,8 @@ export const faq = [
   
       return {
         id:1,
-        question:'How Do Bots Work',
-        answer:'Each bot can set indicators and parameters that when they are align, will make a buy or sell by telling the exchange of your choice to execute a trade. Most of the time a bot is tuned for a specific market and time period. This is the developer’s best educated guess on how the market will work in the future. It is not a magic crystal ball that will make perfect trades every time',
+        question:'What payment methods do you support?',
+        answer:'We believe in the crypto-currency eco-system and strive to do our best to support it and the crypto community. For this reason, we only accept payments from master card,visa card and Bitcoins',
         state: show,
         run
       };
