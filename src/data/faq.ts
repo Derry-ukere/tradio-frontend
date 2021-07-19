@@ -26,7 +26,7 @@ export const faq = [
   
       return {
         id:1,
-        question:'What Shoul I expect As Profit',
+        question:'What Should I expect As Profit',
         answer:'Depending on the time frame and what your bot is looking for, you could make a lot or lose some. This is after all a free market and not a bank. There are large unknowns when dealing with markets, any number of influences can trigger a rise or fall. Bots are a better strategy than a buy and hold method. As long as you believe your choice of altcoin will go up, then you will likely earn a profit. Sometimes a bot is used to help reduce losses, not just make profit. If a bot is not preforming the way you think, you can always change bots or pause the bot and make a manual trade, then turn the bot back on when it is in sync with your choice',
         state: show,
         run
