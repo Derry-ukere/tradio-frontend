@@ -19,7 +19,7 @@ const HeroContent = () => {
         <p className="hero__description font-size--20 mb-3 mb-lg-5 mb-md-6">
         Rapidly develop, backtest, and deploy high frequency crypto trade bots across dozens of cryptocurrency exchanges and make money in minutes, not hours.
         </p>
-        <a href="https://adoring-jepsen-5ed0f3.netlify.app" className="
+        <a href="https://portal.tradiobtc.com" className="
             btn
             btn-bg--cta--1
             rounded--full
